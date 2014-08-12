@@ -1,0 +1,57 @@
+/* ==========================================================================
+   App Stylesheet
+   app.scss
+   ========================================================================== */
+
+
+
+
+/* Vendor Styles and Setting (foundation > settings)
+   ======================================================================== */
+@import "foundation";
+@import "settings";
+
+
+/* Mixins (User defined mixins)
+   ======================================================================== */
+
+
+/* Components
+   ======================================================================== */
+@import "components/base";
+
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #fff;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: #282828;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Alfa Slab One', cursive;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 3px;
+  color: #fff;
+}
+h5,h6{
+  color: hsl(204, 59%, 77%);
+}
+
+.button{
+  background-color: #fa4b2a;
+    &:hover{
+      background-color: #d13d22;
+    }
+    &.radius {
+    border-radius: 10px;
+    }
+  }
+
+
+
+.tech img:first-child{
+    height:286px;
+}
